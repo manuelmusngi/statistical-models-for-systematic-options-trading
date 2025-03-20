@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import yfinance as yf
+import matplotlib.pyplot as plt
 
 def get_hurst_exponent(time_series, max_lag=20):
     lags = range(2, max_lag)
@@ -20,8 +21,28 @@ print(f'Hurst exponent: {hurst_exponent}')
 
 # Interpretation
 if hurst_exponent < 0.5:
-    print("The time series is mean reverting.")
+    interpretation = "The time series is mean reverting."
 elif hurst_exponent == 0.5:
-    print("The time series is a Geometric Brownian Motion.")
+    interpretation = "The time series is a Geometric Brownian Motion."
 else:
-    print("The time series is trending.")
+    interpretation = "The time series is trending."
+
+print(interpretation)
+
+# Plot the SPX Close prices
+plt.figure(figsize=(10, 6))
+plt.plot(spx['Close'], label='SPX Close Price')
+plt.title('SPX Close Prices')
+plt.xlabel('Date')
+plt.ylabel('Price')
+plt.legend()
+plt.show()
+
+# Plot the returns
+plt.figure(figsize=(10, 6))
+plt.plot(spx['Return'], label='SPX Daily Returns')
+plt.title('SPX Daily Returns')
+plt.xlabel('Date')
+plt.ylabel('Returns')
+plt.legend()
+plt.show()
