@@ -21,7 +21,7 @@ plt.ylabel('Returns (%)')
 plt.show()
 
 # Fit GARCH(1,1) model
-model = arch_model(returns, vol='Garch', p=1, q=1)
+model = arch_model(returns, vol='Garch', p=1, q=1, rescale=False)
 garch_fit = model.fit(disp='off')
 
 print(garch_fit.summary())
