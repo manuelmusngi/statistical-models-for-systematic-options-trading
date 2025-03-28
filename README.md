@@ -1,5 +1,5 @@
 # TimeSeriesModels
-Purpose: Statistical Models used forecast price movements or implied volatility for options strategies.
+Purpose: Statistical Models used to forecast price movements or implied volatility for options strategies.
 
 Example:
 
