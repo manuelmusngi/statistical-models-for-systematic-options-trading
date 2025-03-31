@@ -1,4 +1,5 @@
-Systematic options trading relies on statistical models to identify opportunities, manage risk, and execute trades consistently. Here are some key statistical models used in systematic options trading:
+Systematic options trading relies on statistical models to identify opportunities, manage risk, and execute trades consistently. 
+Here are some key statistical models used in systematic options trading:
 
 ---
 
