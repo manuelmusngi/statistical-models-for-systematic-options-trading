@@ -85,4 +85,3 @@ A systematic trading approach may combine multiple models. For example:
 3. **Optimize position sizing** using the Kelly Criterion.
 4. **Use machine learning classifiers** to filter high-probability setups.
 
-Would you like examples of how to code one of these models in Python? 🚀
