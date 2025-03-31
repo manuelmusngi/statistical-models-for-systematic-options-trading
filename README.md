@@ -3,7 +3,16 @@ Here are some key statistical models used in systematic options trading:
 
 ---
 
-### **1. Mean Reversion Models**
+### **1. Time Series Models**
+   - **Purpose:** Forecast price movements or implied volatility for options strategies.
+   - **Example:** 
+     - Use an **ARIMA** or **GARCH** model to predict future realized volatility and trade options based on expected changes.
+   - **Common Techniques:**
+     - **ARIMA (AutoRegressive Integrated Moving Average)** – Forecasting price trends
+     - **GARCH (Generalized Autoregressive Conditional Heteroskedasticity)** – Forecasting volatility changes
+---
+
+### **2. Mean Reversion Models**
    - **Purpose:** Identify assets where implied volatility, price, or option Greeks revert to a historical mean.
    - **Example:** 
      - If implied volatility (IV) is significantly above its long-term average, traders may sell options expecting IV to revert.
@@ -11,16 +20,6 @@ Here are some key statistical models used in systematic options trading:
      - Z-Score Analysis (for IV rank and IV percentile)
      - Bollinger Bands
      - Ornstein-Uhlenbeck Process (for modeling mean-reverting behavior in asset prices)
-
----
-
-### **2. Time Series Models**
-   - **Purpose:** Forecast price movements or implied volatility for options strategies.
-   - **Example:** 
-     - Use an **ARIMA** or **GARCH** model to predict future realized volatility and trade options based on expected changes.
-   - **Common Techniques:**
-     - **ARIMA (AutoRegressive Integrated Moving Average)** – Forecasting price trends
-     - **GARCH (Generalized Autoregressive Conditional Heteroskedasticity)** – Forecasting volatility changes
 
 ---
 
