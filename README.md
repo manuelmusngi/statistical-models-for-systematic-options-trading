@@ -5,7 +5,6 @@ Here are some key statistical models used in systematic options trading:
 
 ### **1. Time Series Models**
    - **Purpose:** Forecast price movements or implied volatility for options strategies.
-     - Use an **ARIMA** or **GARCH** model to predict future realized volatility and trade options based on expected changes.
    - **Common Techniques:**
      - **ARIMA (AutoRegressive Integrated Moving Average)** – Forecasting price trends
      - [ARIMA](https://github.com/manuelmusngi/qr-statistical-models-for-systematic-options-trading/blob/main/ARIMA.py)
@@ -13,9 +12,7 @@ Here are some key statistical models used in systematic options trading:
      - [GARCH](https://github.com/manuelmusngi/qr-statistical-models-for-systematic-options-trading/blob/main/GARCH.py)
 ---
 ### **2. Risk-Based Models**
-   - **Purpose:** Manage portfolio risk dynamically.
-   - **Example:** 
-     - Use **Kelly Criterion** to size positions optimally based on probability-weighted returns.
+   - **Purpose:** Manage position or porfolio risk dynamically.
    - **Common Techniques:**
      - Value at Risk (VaR) and Conditional VaR (CVaR)
      - Delta, Gamma, Vega hedging strategies
@@ -23,8 +20,6 @@ Here are some key statistical models used in systematic options trading:
 ---
 ### **3. Stochastic Models**
    - **Purpose:** Model the randomness in price movements and volatility.
-   - **Example:** 
-     - Use **Heston Model** to model stochastic volatility and optimize straddle/strangle pricing.
    - **Common Techniques:**
      - Heston Model (stochastic volatility)
      - Jump-Diffusion Models (to account for market crashes)
@@ -32,8 +27,6 @@ Here are some key statistical models used in systematic options trading:
 ---
 ### **4. Market Microstructure and Order Flow Models**
    - **Purpose:** Analyze liquidity, order flow, and market participant behavior.
-   - **Example:**
-     - Use volume imbalance and VWAP deviation to identify when market makers are aggressively hedging, which impacts IV.
    - **Common Techniques:**
      - Order book imbalance analysis
      - Volume-weighted average price (VWAP) deviation models
@@ -41,8 +34,6 @@ Here are some key statistical models used in systematic options trading:
 ---
 ### **5. Machine Learning-Based Models**
    - **Purpose:** Detect patterns in option pricing and market data.
-   - **Example:** 
-     - Train a random forest or neural network to predict implied volatility crush after earnings announcements.
    - **Common Techniques:**
      - Support Vector Machines (SVMs) for classification of profitable vs. non-profitable trades
      - Reinforcement Learning for optimizing strategy execution
@@ -50,8 +41,6 @@ Here are some key statistical models used in systematic options trading:
 ---
 ### **6. Mean Reversion Models**
    - **Purpose:** Identify assets where implied volatility, price, or option Greeks revert to a historical mean.
-   - **Example:** 
-     - If implied volatility (IV) is significantly above its long-term average, traders may sell options expecting IV to revert.
    - **Common Techniques:**
      - Z-Score Analysis (for IV rank and IV percentile)
      - Bollinger Bands
@@ -59,7 +48,6 @@ Here are some key statistical models used in systematic options trading:
 ---
 ### **7. Probability and Expected Value Models**
    - **Purpose:** Evaluate expected returns of different options strategies.
-   - **Example:** 
      - **Black-Scholes Model**: Used to estimate theoretical option prices and compare against market prices for arbitrage.
      - **Monte Carlo Simulations**: Simulating thousands of price paths to evaluate strategy performance.
    - **Common Techniques:**
