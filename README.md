@@ -9,7 +9,9 @@ Here are some key statistical models used in systematic options trading:
      - Use an **ARIMA** or **GARCH** model to predict future realized volatility and trade options based on expected changes.
    - **Common Techniques:**
      - **ARIMA (AutoRegressive Integrated Moving Average)** – Forecasting price trends
+       [ARIMA](https://github.com/manuelmusngi/qr-statistical-models-for-systematic-options-trading/blob/main/ARIMA.py)
      - **GARCH (Generalized Autoregressive Conditional Heteroskedasticity)** – Forecasting volatility changes
+       [GARCH](https://github.com/manuelmusngi/qr-statistical-models-for-systematic-options-trading/blob/main/GARCH.py)
 ---
 ### **2. Risk-Based Models**
    - **Purpose:** Manage portfolio risk dynamically.
