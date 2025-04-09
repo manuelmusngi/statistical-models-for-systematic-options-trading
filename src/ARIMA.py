@@ -9,7 +9,7 @@ from statsmodels.tsa.stattools import adfuller
 from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 
 # Fetch the data
-ticker = "^GSPC"  # Ticker symbol for S&P 500 Index
+ticker = "^SPX"  # Ticker symbol for S&P 500 Index
 data = yf.download(ticker, start="2010-01-01", end="2025-01-01")
 
 # Display the first few rows of the dataset
