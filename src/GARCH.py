@@ -3,7 +3,7 @@ import yfinance as yf
 from arch import arch_model
 
 # Fetch SPX data from Yahoo Finance
-spx = yf.download('^GSPC', start='2000-01-01', end='2025-01-01')
+spx = yf.download('^SPX', start='2000-01-01', end='2025-01-01')
 
 # Calculate the daily returns
 spx['Return'] = spx['Close'].pct_change().dropna()
